@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --font-mono: 'Poppins', sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Poppins', sans-serif;
+    --font-mono: 'Poppins', sans-serif;
+  }
+
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #FAF7F2;
+    color: #2D2118;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-mono {
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 0.02em;
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F4ECE1;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8C7B5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #BFA993;
+}
+
+
+.glass-panel {
+  background: rgba(255, 253, 249, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #EFE5D8;
+}
+
+.glass-panel-warm {
+  background: rgba(250, 245, 238, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #E5D7C5;
+}
+
+.gold-gradient-text, .natural-gradient-text {
+  background: linear-gradient(135deg, #7A5338 0%, #432E20 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.earth-badge {
+  background-color: #F7EFE6;
+  color: #63432C;
+  border: 1px solid #E8D9C8;
+}
+
+.coffee-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.coffee-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(67, 46, 32, 0.12), 0 0 0 1px #8C6243;
+}

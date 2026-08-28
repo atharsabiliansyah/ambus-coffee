@@ -1,0 +1,6 @@
+{
+  "name": "Ambus Coffee & Roastery",
+  "description": "Website resmi dan platform pemesanan Ambus Coffee dengan katalog menu specialty, e-commerce, reservasi meja, live barista concierge, dan dashboard admin.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
