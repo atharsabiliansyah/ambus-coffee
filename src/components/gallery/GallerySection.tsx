@@ -39,18 +39,19 @@ export const GallerySection: React.FC = () => {
   return (
     <div id="gallery-page" className="pt-28 sm:pt-32 pb-16 bg-[#FAF7F2] min-h-screen space-y-12 text-[#2D2118]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        {/* Header */}
-        <div className="text-left max-w-2xl mx-auto space-y-3 pt-4">
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D2118]">
+        
+        {/* Header (Rata kiri sejajar penuh dengan grid gambar) */}
+        <div className="w-full text-left space-y-3 pt-4">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D2118] tracking-tight">
             Galeri Suasana & <span className="text-[#8C5E3C]">Keahlian Seduh</span>
           </h1>
-          <p className="text-sm text-[#756457]">
+          <p className="text-sm sm:text-base text-[#756457] max-w-2xl">
             Kilas balik estetika kedai, ketelitian proses sangrai, seni latte art barista, dan kehangatan komunitas Ambus Coffee.
           </p>
         </div>
 
         {/* Category Filters */}
-        <div className="flex flex-wrap justify-left gap-2">
+        <div className="flex flex-wrap justify-start gap-2">
           {[
             { id: 'all', label: 'Semua Foto' },
             { id: 'ambiance', label: 'Suasana & Kedai' },
@@ -74,7 +75,7 @@ export const GallerySection: React.FC = () => {
         </div>
 
         {/* Gallery Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {filteredItems.map((item, idx) => (
             <motion.div
               key={item.id}

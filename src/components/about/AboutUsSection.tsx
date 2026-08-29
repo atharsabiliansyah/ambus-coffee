@@ -19,12 +19,13 @@ export const AboutUsSection: React.FC = () => {
   return (
     <div id="about-us-page" className="pt-28 sm:pt-32 pb-16 bg-[#FAF7F2] min-h-screen space-y-20 text-[#2D2118]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-        {/* Hero Banner / Header */}
-        <div className="text-left max-w-3xl mx-auto space-y-4 pt-6">
-          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-[#2D2118] leading-tight">
+        
+        {/* Hero Banner / Header (Rata kiri sejajar penuh dengan kontainer) */}
+        <div className="w-full text-left space-y-4 pt-6">
+          <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-[#2D2118] leading-tight tracking-tight max-w-3xl">
             Kisah di Balik <span className="text-[#8C5E3C]">Racikan Nikmat</span> Ambus Coffee
           </h1>
-          <p className="text-base text-[#756457] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#756457] leading-relaxed max-w-2xl">
             Ambus Coffee lahir dari hasrat murni menghadirkan secangkir kopi nikmat berkualitas tinggi. Kami percaya secangkir kopi terbaik adalah hasil dari pemilihan biji kopi terbaik Nusantara dan keahlian sangrai kelompok kecil yang teliti.
           </p>
         </div>
@@ -43,13 +44,13 @@ export const AboutUsSection: React.FC = () => {
                 Mengapa Dinamakan <span className="text-[#8C5E3C]">Ambus</span>?
               </h2>
               <p className="text-sm text-[#756457] leading-relaxed">
-                Kata <em>Ambus</em> kejutan rasa merefleksikan pengalaman saat lidah Anda menyentuh tegukan pertama. Tidak ada rasa hambar atau datar, yang ada adalah kejutan rasa berlapis yang harmonis dan terstruktur:
+                Kata <em>Ambus</em> merefleksikan kejutan rasa saat lidah Anda menyentuh tegukan pertama. Tidak ada rasa hambar atau datar, yang ada adalah kejutan rasa berlapis yang harmonis dan terstruktur:
               </p>
 
               <div className="space-y-4 pt-2">
                 <div className="p-4 rounded-xl bg-[#FAF7F2] border border-[#EFE8DE] flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#F4ECE1] flex items-center justify-center text-[#7A5236] shrink-0 font-serif font-bold text-lg border border-[#E5D7C5]">
-                    
+                  <div className="w-10 h-10 rounded-lg bg-[#F4ECE1] flex items-center justify-center text-[#7A5236] shrink-0 font-serif font-bold text-base border border-[#E5D7C5]">
+                    01
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#2D2118] text-sm">Nutty Depth</h4>
@@ -60,8 +61,8 @@ export const AboutUsSection: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FAF7F2] border border-[#EFE8DE] flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#F4ECE1] flex items-center justify-center text-[#7A5236] shrink-0 font-serif font-bold text-lg border border-[#E5D7C5]">
-                    
+                  <div className="w-10 h-10 rounded-lg bg-[#F4ECE1] flex items-center justify-center text-[#7A5236] shrink-0 font-serif font-bold text-base border border-[#E5D7C5]">
+                    02
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#2D2118] text-sm">Dark Chocolate Richness</h4>
@@ -72,8 +73,8 @@ export const AboutUsSection: React.FC = () => {
                 </div>
 
                 <div className="p-4 rounded-xl bg-[#FAF7F2] border border-[#EFE8DE] flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-lg bg-[#F4ECE1] flex items-center justify-center text-[#7A5236] shrink-0 font-serif font-bold text-lg border border-[#E5D7C5]">
-                    
+                  <div className="w-10 h-10 rounded-lg bg-[#F4ECE1] flex items-center justify-center text-[#7A5236] shrink-0 font-serif font-bold text-base border border-[#E5D7C5]">
+                    03
                   </div>
                   <div>
                     <h4 className="font-semibold text-[#2D2118] text-sm">Citrus Edge</h4>
@@ -97,7 +98,7 @@ export const AboutUsSection: React.FC = () => {
                 <div className="absolute bottom-6 inset-x-6 p-4 rounded-xl bg-white/95 backdrop-blur-md border border-[#E5D7C5] text-center space-y-1 shadow-md">
                   <span className="text-xs text-[#8C5E3C] uppercase tracking-wider font-semibold">Quality Assurance</span>
                   <div className="font-serif text-base font-bold text-[#2D2118]">
-                  
+                    SCA Standard Cupping Score 85+ Points
                   </div>
                 </div>
               </div>
@@ -122,7 +123,7 @@ export const AboutUsSection: React.FC = () => {
               </p>
             </div>
             <div className="pt-4 border-t border-[#EFE8DE] flex items-center justify-between text-xs text-[#8C5E3C] font-semibold">
-              <span> Aceh Gayo</span>
+              <span>Aceh Gayo • Flores • Java</span>
               <span>Direct Trade</span>
             </div>
           </div>
@@ -151,7 +152,7 @@ export const AboutUsSection: React.FC = () => {
         {/* Bottom CTA to Menu & Booking */}
         <div className="rounded-2xl bg-[#F4ECE1] p-8 sm:p-10 border border-[#E5D7C5] text-center space-y-4">
           <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#2D2118]">
-            Siap Merasakan Langsung Serangan Rasa Ambus?
+            Siap Merasakan Langsung Racikan Nikmat Ambus?
           </h3>
           <p className="text-sm text-[#756457] max-w-xl mx-auto">
             Kunjungi kedai kami untuk menikmati seduhan hangat dari barista profesional, atau pesan biji kopi segar untuk diseduh di rumah.
@@ -161,7 +162,7 @@ export const AboutUsSection: React.FC = () => {
               onClick={() => setActivePage('menu')}
               className="px-6 py-3 rounded-xl bg-[#433024] hover:bg-[#302016] text-[#FFFDF8] font-bold text-sm flex items-center gap-2 cursor-pointer shadow-md transition-colors"
             >
-              
+              <Coffee className="w-4 h-4" />
               <span>Lihat Katalog Menu</span>
             </button>
             <button
@@ -169,7 +170,7 @@ export const AboutUsSection: React.FC = () => {
               className="px-6 py-3 rounded-xl bg-[#FFFFFF] hover:bg-[#FAF7F2] text-[#2D2118] border border-[#E5D7C5] font-semibold text-sm flex items-center gap-2 cursor-pointer transition-colors"
             >
               <span>Reservasi Meja</span>
-              
+              <ArrowRight className="w-4 h-4" />
             </button>
           </div>
         </div>

@@ -48,18 +48,19 @@ export const BlogSection: React.FC = () => {
   return (
     <div id="blog-page" className="pt-28 sm:pt-32 pb-16 bg-[#FAF7F2] min-h-screen text-[#2D2118] space-y-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
-        {/* Header */}
-        <div className="text-left max-w-2xl mx-auto space-y-3 pt-4">
-          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D2118]">
+        
+        {/* Header (Rata kiri sejajar penuh dengan grid kartu artikel) */}
+        <div className="w-full text-left space-y-3 pt-4">
+          <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D2118] tracking-tight">
             Eksplorasi Dunia <span className="text-[#8C5E3C]">Kopi Spesial</span>
           </h1>
-          <p className="text-sm text-[#756457]">
+          <p className="text-sm sm:text-base text-[#756457] max-w-2xl leading-relaxed">
             Panduan teknik seduh barista, cerita perjalanan origin biji kopi, hingga rahasia rasa kopi sangrai berkualitas tinggi.
           </p>
         </div>
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-left gap-2">
+        <div className="flex flex-wrap justify-start gap-2">
           {categories.map((cat) => (
             <button
               key={cat.id}
