@@ -455,7 +455,7 @@ export const MenuCatalog: React.FC = () => {
                 <span className="text-xs uppercase tracking-widest text-[#8C5E3C] font-bold">
                   Official Printable Restaurant Card
                 </span>
-                <h3 className="text-lg font-bold text-[#2D2118]">Menu Fisik Meja Ambus</h3>
+                <h3 className="text-lg font-bold text-[#2D2118]">Menu Ambus</h3>
               </div>
               <button
                 id="btn-print-menu"
@@ -472,7 +472,7 @@ export const MenuCatalog: React.FC = () => {
                 AMBUS COFFEE
               </h2>
               <p className="text-xs uppercase tracking-[0.3em] text-[#8C5E3C] font-semibold">
-                Artisanal Specialty Coffee & Roastery • Est. 2024
+                Artisanal Specialty Coffee & Roastery • Est. 2026
               </p>
               <div className="w-16 h-0.5 bg-[#8C5E3C] mx-auto mt-2" />
             </div>
