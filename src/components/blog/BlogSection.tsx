@@ -52,7 +52,7 @@ export const BlogSection: React.FC = () => {
         {/* Header (Rata kiri sejajar penuh dengan grid kartu artikel) */}
         <div className="w-full text-left space-y-3 pt-4">
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D2118] tracking-tight">
-            Eksplorasi Dunia <span className="text-[#8C5E3C]">Kopi Spesial</span>
+            Eksplorasi Dunia <span className="text-[#8C5E3C]">Kopi Ambus</span>
           </h1>
           <p className="text-sm sm:text-base text-[#756457] max-w-2xl leading-relaxed">
             Panduan teknik seduh barista, cerita perjalanan origin biji kopi, hingga rahasia rasa kopi sangrai berkualitas tinggi.
