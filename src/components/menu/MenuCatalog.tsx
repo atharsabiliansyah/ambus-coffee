@@ -81,7 +81,7 @@ export const MenuCatalog: React.FC = () => {
     if (sortBy === 'price_low') return a.price - b.price;
     if (sortBy === 'price_high') return b.price - a.price;
     if (sortBy === 'rating') return b.rating - a.rating;
-    return b.reviewCount - a.reviewCount; // popular
+    return b.reviewCount - a.reviewCount;
   });
 
   const handlePrintMenu = () => {
@@ -93,9 +93,10 @@ export const MenuCatalog: React.FC = () => {
   return (
     <div id="menu-catalog-page" className="pt-28 sm:pt-32 pb-16 bg-[#FAF7F2] min-h-screen space-y-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
-        {/* Header Title */}
-        <div className="text-left max-w-3xl space-y-3 pt-4">
-          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D2118] leading-tight">
+        
+        {/* Header Title (Disembunyikan saat cetak) */}
+        <div className="w-full text-left space-y-3 pt-4 no-print">
+          <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D2118] leading-tight tracking-tight">
             Menu & Produk <span className="text-[#8C5E3C]">Ambus Coffee</span>
           </h1>
           <p className="text-sm sm:text-base text-[#756457] max-w-2xl leading-relaxed">
@@ -103,8 +104,8 @@ export const MenuCatalog: React.FC = () => {
           </p>
         </div>
 
-        {/* Search, Filter & View Controls */}
-        <div className="space-y-4">
+        {/* Search, Filter & View Controls (Disembunyikan saat cetak) */}
+        <div className="space-y-4 no-print">
           <div className="flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
             {/* Search Input */}
             <div className="relative flex-1 max-w-md">
@@ -127,9 +128,8 @@ export const MenuCatalog: React.FC = () => {
               )}
             </div>
 
-            {/* Controls Bar: Modern Dropdown & View Mode Switcher */}
+            {/* Controls Bar: Sort Dropdown & View Switcher */}
             <div className="flex items-center justify-between md:justify-end gap-3 w-full md:w-auto">
-              {/* Custom Sort Dropdown */}
               <div ref={sortDropdownRef} className="relative">
                 <button
                   type="button"
@@ -142,7 +142,6 @@ export const MenuCatalog: React.FC = () => {
                   <ChevronDown className={`w-3.5 h-3.5 text-[#857161] transition-transform duration-200 ${isSortOpen ? 'rotate-180' : ''}`} />
                 </button>
 
-                {/* Popover Menu Sort */}
                 <AnimatePresence>
                   {isSortOpen && (
                     <motion.div
@@ -209,7 +208,7 @@ export const MenuCatalog: React.FC = () => {
                 <button
                   id="btn-view-pdf"
                   onClick={() => setViewMode('pdf_card')}
-                  className={`p-2 rounded-full transition-all flex items-center gap-1.5 text-xs font-semibold cursor-pointer ${
+                  className={`p-2 sm:px-3 rounded-full transition-all flex items-center gap-1.5 text-xs font-semibold cursor-pointer ${
                     viewMode === 'pdf_card'
                       ? 'bg-[#433024] text-[#FFFDF8] shadow-xs'
                       : 'text-[#857161] hover:text-[#2D2118]'
@@ -223,7 +222,7 @@ export const MenuCatalog: React.FC = () => {
             </div>
           </div>
 
-          {/* Category Horizontal Scroll Bar */}
+          {/* Category Tabs */}
           <div className="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none">
             {categories.map((cat) => {
               const isActive = activeCategory === cat.id;
@@ -292,11 +291,9 @@ export const MenuCatalog: React.FC = () => {
           </div>
         </div>
 
-        {/* CONTENT DISPLAY MODES */}
-
         {/* 1. GRID VIEW */}
         {viewMode === 'grid' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 no-print">
             {sortedProducts.map((prod) => (
               <div
                 key={prod.id}
@@ -375,7 +372,7 @@ export const MenuCatalog: React.FC = () => {
 
         {/* 2. LIST VIEW */}
         {viewMode === 'list' && (
-          <div className="space-y-3">
+          <div className="space-y-3 no-print">
             {sortedProducts.map((prod, index) => (
               <AnimatedItem
                 key={prod.id}
@@ -447,15 +444,16 @@ export const MenuCatalog: React.FC = () => {
           </div>
         )}
 
-        {/* 3. DIGITAL PDF MENU CARD PREVIEW */}
+        {/* 3. DIGITAL PDF MENU CARD PREVIEW (HANYA INI YANG TERCETAK) */}
         {viewMode === 'pdf_card' && (
-          <div className="rounded-2xl bg-[#FFFFFF] text-[#2D2118] p-6 sm:p-10 shadow-md border border-[#EFE8DE] space-y-8 max-w-4xl mx-auto font-serif">
-            <div className="flex items-center justify-between pb-6 border-b border-[#EFE8DE] font-sans">
+          <div id="printable-menu-card" className="rounded-2xl bg-[#FFFFFF] text-[#2D2118] p-6 sm:p-10 shadow-md border border-[#EFE8DE] space-y-8 max-w-4xl mx-auto font-serif">
+            {/* Toolbar cetak (disembunyikan saat kertas keluar) */}
+            <div className="flex items-center justify-between pb-6 border-b border-[#EFE8DE] font-sans no-print">
               <div>
                 <span className="text-xs uppercase tracking-widest text-[#8C5E3C] font-bold">
                   Official Printable Restaurant Card
                 </span>
-                <h3 className="text-lg font-bold text-[#2D2118]">Menu Ambus</h3>
+                <h3 className="text-lg font-bold text-[#2D2118]">Menu Fisik Meja Ambus</h3>
               </div>
               <button
                 id="btn-print-menu"
@@ -467,6 +465,7 @@ export const MenuCatalog: React.FC = () => {
               </button>
             </div>
 
+            {/* Kop Judul Menu Fisik */}
             <div className="text-center space-y-2">
               <h2 className="text-3xl sm:text-4xl font-extrabold uppercase tracking-widest text-[#2D2118]">
                 AMBUS COFFEE
@@ -477,6 +476,7 @@ export const MenuCatalog: React.FC = () => {
               <div className="w-16 h-0.5 bg-[#8C5E3C] mx-auto mt-2" />
             </div>
 
+            {/* Isi Kolom Menu */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-sm font-sans">
               <div className="space-y-6">
                 <div>
@@ -534,7 +534,7 @@ export const MenuCatalog: React.FC = () => {
 
                 <div>
                   <h4 className="text-base font-bold uppercase tracking-wider text-[#8C5E3C] border-b border-[#EFE8DE] pb-1 mb-3">
-                     Pastry & Bakery
+                    Pastry & Bakery
                   </h4>
                   <div className="space-y-4">
                     {products.filter((p) => p.category === 'food_pastry').map((item) => (
@@ -560,7 +560,7 @@ export const MenuCatalog: React.FC = () => {
 
         {/* Empty Search State */}
         {sortedProducts.length === 0 && (
-          <div className="text-center py-16 space-y-3 bg-[#FFFFFF] rounded-2xl border border-[#EFE8DE]">
+          <div className="text-center py-16 space-y-3 bg-[#FFFFFF] rounded-2xl border border-[#EFE8DE] no-print">
             <Coffee className="w-10 h-10 text-[#857161] mx-auto" />
             <h3 className="font-serif text-lg font-bold text-[#2D2118]">Tidak Ada Menu yang Cocok</h3>
             <button
