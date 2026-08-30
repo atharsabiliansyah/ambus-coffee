@@ -596,7 +596,7 @@ export const TESTIMONIALS: Testimonial[] = [
     comment: 'Selalu pesan Ambus House Blend Whole Beans untuk stok seduh di rumah. Roasting-nya sangat bersih, nggak ada rasa gosong sama sekali, notes cokelat dan karamelnya keluar maksimal.',
     date: '2 minggu yang lalu',
     favoriteItem: 'Ambus House Blend (250g)',
-    avatar: '/owo.png',
+    avatar: '/wowo.png',
     verifiedOrder: true
   },
   {
