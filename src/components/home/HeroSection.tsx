@@ -31,7 +31,7 @@ const HERO_CAFE_VIEWS: HeroAmbianceView[] = [
     id: 'cozy-lounge',
     name: 'Warm Scandinavian Lounge & Work Sanctuary',
     tag: 'Focus Workspace',
-    image: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1920&q=85',
+    image: '/suasana2.png',
     badgeText: 'WiFi 150 Mbps & Power Outlets',
     location: 'Dago Bandung • Mezzanine',
     description: 'Pencahayaan natural lembut yang menenangkan untuk fokus bekerja, membaca, atau berdiskusi.'
@@ -40,7 +40,7 @@ const HERO_CAFE_VIEWS: HeroAmbianceView[] = [
     id: 'outdoor-terrace',
     name: 'Open-Air Garden & Tropical Courtyard',
     tag: 'Outdoor Patio',
-    image: 'https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=1920&q=85',
+    image: '/suasana3.png',
     badgeText: 'Breezy & Open Air',
     location: 'Senopati Garden',
     description: 'Halaman asri terbuka berpayung pepohonan rindang dengan semilir angin sejuk.'
@@ -49,7 +49,7 @@ const HERO_CAFE_VIEWS: HeroAmbianceView[] = [
     id: 'cupping-lab',
     name: 'Communal Table & Tasting Lab',
     tag: 'Ruang Kolaborasi',
-    image: 'https://images.unsplash.com/photo-1600093463592-8e36ae95ef56?auto=format&fit=crop&w=1920&q=85',
+    image: '/suasana4.png',
     badgeText: 'Group Discussion & Tasting',
     location: 'Kemang Roastery',
     description: 'Meja komunal panjang untuk pertemuan tim, sesi cupping kopi, dan obrolan hangat.'

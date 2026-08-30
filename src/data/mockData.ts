@@ -568,46 +568,46 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'test-1',
-    name: 'Dimas Wicaksono',
-    role: 'Creative Director & Coffee Enthusiast',
+    name: 'owi Kopling',
+    role: 'drakor & film child',
     rating: 5,
     comment: 'Kopi Susu Gula Aren Ambus adalah salah satu racikan kopi susu terbaik yang pernah saya coba. Perpaduan espresso pekat dan gula aren murninya pas banget!',
     date: '3 hari yang lalu',
     favoriteItem: 'Kopi Susu Gula Aren Ambus',
-    avatar: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=200&q=80',
+    avatar: '/owi.png',
     verifiedOrder: true
   },
   {
     id: 'test-2',
-    name: 'Anindya Putri',
-    role: 'Architect & Remote Worker',
+    name: 'Rizki Melet',
+    role: 'exp lane & jungler',
     rating: 5,
     comment: 'Tempat favorit untuk WFC! Suasananya tenang, colokan listrik banyak dan rapi, koneksi WiFi 150 Mbps kencang, plus Butter Croissant dan Caffe Latte-nya selalu konsisten nikmat setiap hari.',
     date: '1 minggu yang lalu',
     favoriteItem: 'Caffe Latte',
-    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80',
+    avatar: '/rian.png',
     verifiedOrder: true
   },
   {
     id: 'test-3',
-    name: 'Kevin Santoso',
+    name: 'owo Merenung',
     role: 'Software Engineer',
     rating: 5,
     comment: 'Selalu pesan Ambus House Blend Whole Beans untuk stok seduh di rumah. Roasting-nya sangat bersih, nggak ada rasa gosong sama sekali, notes cokelat dan karamelnya keluar maksimal.',
     date: '2 minggu yang lalu',
     favoriteItem: 'Ambus House Blend (250g)',
-    avatar: 'https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=200&q=80',
+    avatar: '/owo.png',
     verifiedOrder: true
   },
   {
     id: 'test-4',
-    name: 'Vania Lestari',
-    role: 'Brand Consultant',
+    name: 'rusdi Tongkang',
+    role: 'alakadarnya',
     rating: 5,
     comment: 'Pelayanan baristanya luar biasa ramah dan berwawasan tinggi. Saat bingung memilih biji kopi manual brew, mereka menjelaskan detail tasting notes tanpa kesan menggurui. 10/10 recommended!',
     date: '1 bulan yang lalu',
     favoriteItem: 'Kopi Filter V60 (Arabica Gayo)',
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80',
+    avatar: '/tongkang.png',
     verifiedOrder: true
   }
 ];
