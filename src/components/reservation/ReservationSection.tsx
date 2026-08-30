@@ -38,7 +38,7 @@ export const ReservationSection: React.FC = () => {
         {/* Header */}
         <div className="text-left max-w-2xl mx-auto space-y-3 pt-4">
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D2118]">
-            Reservasi Meja di <span className="text-[#8C5E3C]"> Ambus Coffee</span>
+            Reservasi <span className="text-[#8C5E3C]"> Ambus Coffee</span>
           </h1>
         </div>
 

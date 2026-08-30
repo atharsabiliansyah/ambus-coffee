@@ -43,7 +43,7 @@ export const GallerySection: React.FC = () => {
         {/* Header (Rata kiri sejajar penuh dengan grid gambar) */}
         <div className="w-full text-left space-y-3 pt-4">
           <h1 className="font-serif text-4xl sm:text-5xl font-bold text-[#2D2118] tracking-tight">
-            Galeri Suasana & <span className="text-[#8C5E3C]">Keahlian Seduh</span>
+            Galeri <span className="text-[#8C5E3C]">Ambus coffee</span>
           </h1>
           <p className="text-sm sm:text-base text-[#756457] max-w-2xl">
             Kilas balik estetika kedai, ketelitian proses sangrai, seni latte art barista, dan kehangatan komunitas Ambus Coffee.

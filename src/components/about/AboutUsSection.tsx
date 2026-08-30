@@ -23,7 +23,7 @@ export const AboutUsSection: React.FC = () => {
         {/* Hero Banner / Header (Rata kiri sejajar penuh dengan kontainer) */}
         <div className="w-full text-left space-y-4 pt-6">
           <h1 className="font-serif text-4xl sm:text-5xl font-extrabold text-[#2D2118] leading-tight tracking-tight max-w-3xl">
-            Kisah di Balik <span className="text-[#8C5E3C]">Racikan Nikmat</span> Ambus Coffee
+            Cerita <span className="text-[#8C5E3C]">Racikan Nikmat</span> Ambus Coffee
           </h1>
           <p className="text-sm sm:text-base text-[#756457] leading-relaxed max-w-2xl">
             Ambus Coffee lahir dari hasrat murni menghadirkan secangkir kopi nikmat berkualitas tinggi. Kami percaya secangkir kopi terbaik adalah hasil dari pemilihan biji kopi terbaik Nusantara dan keahlian sangrai kelompok kecil yang teliti.

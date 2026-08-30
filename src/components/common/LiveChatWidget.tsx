@@ -28,7 +28,7 @@ export const LiveChatWidget: React.FC = () => {
     {
       id: 'm1',
       sender: 'bot',
-      text: 'Halo! Selamat datang di Ambus Coffee & Roastery. Ada yang bisa kami bantu? (Rekomendasi kopi, status pesanan, atau reservasi meja)',
+      text: 'Halo! Selamat datang di Ambus Coffee. Ada yang bisa kami bantu? Rekomendasi kopi, status pesanan, atau reservasi meja',
       timestamp: 'Baru saja'
     }
   ]);
