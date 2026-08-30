@@ -25,11 +25,11 @@ export const LocationSection: React.FC = () => {
         {/* Header Section (Rata Kiri, Elegan & Bersih) */}
         <div className="text-left max-w-2xl space-y-2.5">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EFE8DE] text-[#8C5E3C] text-[11px] font-bold uppercase tracking-wider">
-            <Sparkles className="w-3.5 h-3.5" />
+            
             <span>Cabang & Roastery</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#2D2118] leading-tight">
-            Kunjungi Kedai & <span className="text-[#8C5E3C]">Roastery Ambus</span>
+            Kunjungi tempat & <span className="text-[#8C5E3C]">Roastery Ambus</span>
           </h2>
           <p className="text-xs sm:text-sm text-[#756457] leading-relaxed">
             Dirancang sebagai ruang singgah yang nyaman untuk menikmati seduhan kopi artisanal, berkarya, berdiskusi, atau sekadar melepas lelah.
@@ -107,10 +107,7 @@ export const LocationSection: React.FC = () => {
               {/* Status Header */}
               <div className="space-y-1.5 border-b border-[#F2EAE0] pb-4">
                 <div className="flex items-center gap-2">
-                  <span className="flex h-2.5 w-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
-                  <span className="text-[11px] font-bold text-emerald-700 uppercase tracking-wide">
-                    Buka Hari Ini
-                  </span>
+                
                 </div>
                 <h3 className="font-serif text-2xl font-bold text-[#2D2118]">
                   {currentBranch.name}
