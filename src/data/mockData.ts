@@ -205,7 +205,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 32000,
     description: 'Seduhan manual metode pour over V60 menggunakan biji kopi Arabica Gayo pilihan. Menghasilkan secangkir kopi dengan rasa jernih, aroma buah segar, dan tingkat keasaman yang lembut.',
     shortDesc: 'Seduhan manual V60 Arabica Gayo dengan karakter bersih dan aroma buah segar.',
-    image: 'https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80',
+    image: '/pack.png',
     badge: 'Single Origin',
     rating: 4.9,
     reviewCount: 198,
@@ -389,7 +389,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 95000,
     description: 'Biji kopi 100% Arabica Aceh Gayo pilihan yang disangrai medium dalam jumlah kecil (small batch). Memiliki rasa manis rempah karamel dan keasaman sitrus yang bersih.',
     shortDesc: 'Single origin Arabica Gayo 250g. Rasa manis karamel dan aroma buah lembut.',
-    image: 'https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80',
+    image: '/pack.png',
     badge: 'Single Origin',
     rating: 4.9,
     reviewCount: 160,
@@ -408,7 +408,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 95000,
     description: 'Biji kopi 100% Arabica Flores Bajawa dengan karakter rasa manis kacang panggang, cokelat susu lembut, dan aroma semerbak.',
     shortDesc: 'Biji kopi 250g dari Flores Bajawa. Karakter cokelat susu dan kacang manis.',
-    image: 'https://images.unsplash.com/photo-1611854779393-1b2da9d400fe?auto=format&fit=crop&w=800&q=80',
+    image: '/pack.png',
     rating: 4.8,
     reviewCount: 120,
     inStock: true,
@@ -419,7 +419,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     weightGrams: 250
   },
 
-  // --- MERCHANDISE ---
+  
   {
     id: 'ambus-matte-white-tumbler',
     name: 'Ambus Thermal Hydro Tumbler 500ml',
