@@ -29,7 +29,6 @@ import { AdminDashboard } from './components/admin/AdminDashboard';
 import { LiveChatWidget } from './components/common/LiveChatWidget';
 import { ToastContainer } from './components/common/ToastContainer';
 import { AuthModal } from './components/auth/AuthModal';
-import { BackgroundArt } from './components/layout/BackgroundArt';
 
 const MainContent: React.FC = () => {
   const { activePage } = useShop();
@@ -41,8 +40,6 @@ const MainContent: React.FC = () => {
 
   return (
     <div className="relative min-h-screen flex flex-col bg-[#FAF7F2] text-[#2D2118] font-sans antialiased selection:bg-[#432E20] selection:text-[#FFFDF9]">
-      {/* Artisanal Background Elements: Corner Line Art, Dots & Graffiti Accents */}
-      <BackgroundArt />
 
       {/* Global Top Navbar */}
       <Navbar />

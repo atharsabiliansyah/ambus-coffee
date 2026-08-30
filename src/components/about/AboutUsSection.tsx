@@ -37,8 +37,6 @@ export const AboutUsSection: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             <div className="lg:col-span-6 space-y-6">
               <div className="inline-flex items-center gap-2 text-xs uppercase text-[#8C5E3C] font-semibold tracking-wider">
-                <Layers className="w-4 h-4" />
-                <span>The Ambus Flavor Triad</span>
               </div>
               <h2 className="font-serif text-3xl font-bold text-[#2D2118]">
                 Mengapa Dinamakan <span className="text-[#8C5E3C]">Ambus</span>?
