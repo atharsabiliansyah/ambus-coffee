@@ -12,7 +12,7 @@ import {
 } from '../types';
 
 export const INITIAL_PRODUCTS: Product[] = [
-  // --- SIGNATURE AMBUS ---
+  
   {
     id: 'kopi-susu-gula-aren',
     name: 'Kopi Susu Gula Aren Ambus',
@@ -135,7 +135,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 32000,
     description: 'Keseimbangan klasik 1/3 espresso mantap, 1/3 steamed milk hangat, dan 1/3 busa susu (thick foam) tebal dengan taburan bubuk cokelat di atasnya.',
     shortDesc: 'Kopi susu busa tebal lembut dengan taburan bubuk cokelat nikmat.',
-    image: 'https://images.unsplash.com/photo-1534778101976-62847782c213?auto=format&fit=crop&w=800&q=80',
+    image: '/capucino.png',
     rating: 4.8,
     reviewCount: 220,
     inStock: true,
@@ -152,7 +152,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 35000,
     description: 'Perpaduan sempurna antara double shot espresso pekat, saus cokelat hitam premium leleh, dan susu segar hangat atau dingin.',
     shortDesc: 'Espresso pekat berpadu cokelat hitam premium dan susu segar.',
-    image: 'https://images.unsplash.com/photo-1541167760496-1628856ab772?auto=format&fit=crop&w=800&q=80',
+    image: '/mocha.png',
     rating: 4.8,
     reviewCount: 185,
     inStock: true,
@@ -224,7 +224,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 30000,
     description: 'Kopi yang diseduh dingin perlahan selama 16 jam dengan air es. Menghasilkan rasa kopi yang sangat halus, minim rasa pahit tajam, rendah asam, dan menyegarkan saat disajikan dingin.',
     shortDesc: 'Ekstraksi dingin 16 jam, rasa sangat halus, segar dan rendah keasaman.',
-    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
+    image: '/brew.png',
     badge: 'Best Seller',
     rating: 4.9,
     reviewCount: 175,
@@ -261,7 +261,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 34000,
     description: 'Bubuk green tea matcha asli berkualitas tinggi dikocok lembut dan dipadukan dengan susu segar manis gurih yang creamy.',
     shortDesc: 'Matcha otentik berpadu susu segar creamy yang harum dan nikmat.',
-    image: 'https://images.unsplash.com/photo-1536256263959-770b48d82b0a?auto=format&fit=crop&w=800&q=80',
+    image: '/matcha.png',
     badge: 'Best Seller',
     rating: 4.9,
     reviewCount: 240,
@@ -278,7 +278,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 32000,
     description: 'Cokelat pekat pilihan yang dilelehkan bersama susu segar creamy, menghasilkan minuman cokelat kaya rasa yang memanjakan lidah.',
     shortDesc: 'Cokelat hitam pekat leleh dengan susu creamy yang nikmat disajikan dingin/panas.',
-    image: 'https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&w=800&q=80',
+    image: '/dark.png',
     rating: 4.8,
     reviewCount: 165,
     inStock: true,
@@ -294,7 +294,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 25000,
     description: 'Seduhan teh hitam aromatik dengan perasan sari lemon asli dan es batu yang memberikan kesegaran instan di setiap tegukan.',
     shortDesc: 'Teh hitam segar dengan perasan sari lemon asli yang menyegarkan dahaga.',
-    image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=800&q=80',
+    image: '/lemon.png',
     rating: 4.7,
     reviewCount: 115,
     inStock: true,
