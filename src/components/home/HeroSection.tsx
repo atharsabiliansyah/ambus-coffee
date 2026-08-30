@@ -22,7 +22,7 @@ const HERO_CAFE_VIEWS: HeroAmbianceView[] = [
     id: 'slow-bar',
     name: 'Artisanal Slow Bar & Espresso Station',
     tag: 'Slow Bar & Roasting',
-    image: 'https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?auto=format&fit=crop&w=1920&q=85',
+    image: '/suasana.png',
     badgeText: 'Live Pour Over & Roasting',
     location: 'Senopati Hub • Lantai 1',
     description: 'Nuansa kayu jati hangat dengan aroma biji kopi pilihan yang baru disangrai.'
