@@ -97,7 +97,7 @@ export const MenuCatalog: React.FC = () => {
         {/* Header Title (Disembunyikan saat cetak) */}
         <div className="w-full text-left space-y-3 pt-4 no-print">
           <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#2D2118] leading-tight tracking-tight">
-            Menu<span className="text-[#8C5E3C]">Ambus Coffee</span>
+            Menu <span className="text-[#8C5E3C]"> Ambus Coffee</span>
           </h1>
           <p className="text-sm sm:text-base text-[#756457] max-w-2xl leading-relaxed">
             Pilih dari kopi susu signature, espresso klasik nikmat, seduhan manual filter hingga kemasan biji kopi pilihan
