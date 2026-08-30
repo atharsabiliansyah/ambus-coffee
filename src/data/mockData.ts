@@ -421,14 +421,14 @@ export const INITIAL_PRODUCTS: Product[] = [
 
   // --- MERCHANDISE ---
   {
-    id: 'ambus-matte-black-tumbler',
+    id: 'ambus-matte-white-tumbler',
     name: 'Ambus Thermal Hydro Tumbler 500ml',
     category: 'merchandise',
     categoryLabel: 'Merchandise & Gift Card',
     price: 245000,
-    description: 'Tumbler stainless steel 304 food-grade ganda dengan lapisan matte black anti gores dan logo Ambus terukir laser presisi. Menjaga kopi dingin 24 jam dan panas 12 jam.',
-    shortDesc: 'Tumbler stainless steel matte black 500ml menjaga suhu 24 jam.',
-    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&w=800&q=80',
+    description: 'Tumbler stainless steel 304 food-grade ganda dengan lapisan matte white anti gores dan logo Ambus terukir laser presisi. Menjaga kopi dingin 24 jam dan panas 12 jam.',
+    shortDesc: 'Tumbler stainless steel matte white 500ml menjaga suhu 24 jam.',
+    image: '/tumbler.png',
     badge: 'Best Seller',
     rating: 4.9,
     reviewCount: 88,
