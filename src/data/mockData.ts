@@ -354,7 +354,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: 38000,
     description: 'Croissant mentega gurih berisi potongan daging sapi asap beraroma lezat dan lelehan keju cheddar gurih.',
     shortDesc: 'Croissant gurih berisi irisan daging sapi asap lezat dan keju lumer.',
-    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80',
+    image: '/smoked.png',
     badge: 'Best Seller',
     rating: 4.8,
     reviewCount: 190,
@@ -362,7 +362,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     calories: 380
   },
 
-  // --- WHOLE BEANS ---
+  
   {
     id: 'ambus-house-blend-beans',
     name: 'Ambus House Blend (250g)',
